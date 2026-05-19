@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DancePlanet DJ HiFi Engine</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="module" src="assets/js/app.js"></script>
+</head>
+
+<body>
+
+<canvas id="matrixCanvas"></canvas>
+<canvas id="webgl"></canvas>
+<canvas id="spectrumCanvas"></canvas>
+
+<div id="overlay">
+
+<div class="glass">
+
+<h1>DancePlanet DJ HiFi Engine</h1>
+
+<p>
+AI Ninja-Tech Cinematic Audio Visualizer
+</p>
+
+<div class="top-controls">
+
+<button id="micBtn">MIC</button>
+<button id="uploadBtn">UPLOAD</button>
+
+<input type="file" id="audioFile" accept="audio/*">
+
+</div>
+
+<h2>AI VISUAL MODES</h2>
+
+<div class="mode-grid">
+
+<button class="mode-btn active" data-mode="ghost_matrix">Ghost Matrix</button>
+<button class="mode-btn" data-mode="crimson_matrix">Crimson Matrix</button>
+<button class="mode-btn" data-mode="neon_matrix">Neon Matrix</button>
+<button class="mode-btn" data-mode="quantum_matrix">Quantum Matrix</button>
+<button class="mode-btn" data-mode="infinity_matrix">Infinity Matrix</button>
+
+<button class="mode-btn" data-mode="warp_mode">Warp Mode</button>
+<button class="mode-btn" data-mode="tunnel_mode">Tunnel Mode</button>
+<button class="mode-btn" data-mode="spectral_mode">Spectral Mode</button>
+
+</div>
+
+<h2>20 BAND HIFI EQUALIZER</h2>
+
+<div id="eqControls"></div>
+
+<div class="stats">
+
+<div class="card">
+<span>BPM</span>
+<h3 id="bpm">0</h3>
+</div>
+
+<div class="card">
+<span>FREQ</span>
+<h3 id="freq">0</h3>
+</div>
+
+<div class="card">
+<span>SPECTRAL</span>
+<h3 id="spectral">0</h3>
+</div>
+
+<div class="card">
+<span>MODULATION</span>
+<h3 id="modulation">0%</h3>
+</div>
+
+</div>
+
+<div class="enhancers">
+<button id="bassBoost">Bass Boost</button>
+<button id="dolby">Dolby C</button>
+<button id="wavespectrum">Wave Spectrum</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
